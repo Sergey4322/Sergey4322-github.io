@@ -28,3 +28,10 @@ body {
 width: calc(50% - 10px);
 height: calc(95vw / 2 / 16 * 9);
 }
+
+.heading {
+    font-size: 48px;
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+}
