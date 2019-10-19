@@ -24,9 +24,24 @@ body {
     max-height: 256px;
    max-width: 490px;
     background-color: blue;
-    margin: 5px;
-width: calc(50% - 10px);
 height: calc(95vw / 2 / 16 * 9);
+width: calc(50vw - 10px);
+background-attachment: center;
+background-size: cover;
+}
+
+.img_link {
+    display: block;
+    opacity: 0.65;
+    margin: 5px;
+    transition: opacity 0.4s linear, transform 0.2s ease-in, box-shadow 0.3s ease-out;
+}
+
+.img_link:hover{
+    opacity: 1;
+    transform: scale(1.2) rotate(5deg);
+    z-index: 10;
+    box-shadow: 0 0 200px 30px rgba(0,0,0, 0.4);
 }
 
 .heading {
@@ -34,4 +49,5 @@ height: calc(95vw / 2 / 16 * 9);
     text-align: center;
     width: 100%;
     padding: 30px 0;
+    font-family: 'Mali', cursive;
 }

@@ -1,6 +1,8 @@
 .img-box {
     column-count: 4;
     column-gap: 0;
+    max-width: 1400px;
+    margin: auto;
 
 }
 
@@ -8,4 +10,19 @@
     max-width: calc(100% - 3px);
     display: block;
     margin: 3px;
+}
+
+.image-wrapper {
+    display: block;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.image-wrapper + .image-wrapper {
+    margin:3px 0;
+}
+
+.image-wrapper:hover {
+    opacity: 1;
+    filter: hue-rotate(270deg);
 }
